@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="restaurant-logo.png" alt="Restaurant Logo">
+        </figure>
+        <h1>DODARI Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Order Form</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+        </ul>
+    </nav>
+    <br><hr><br>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <figure>
+                    <img src="https://www.bing.com/search?q=Grilled+Chicken&filters=ufn%3a%22Grilled+Chicken%22+sid%3a%22a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6%22+segment%3a%22generic.carousel%22+secq%3a%22Grilled+Chicken%22+supwlcar%3a%221%22+tsource%3a%22EntitySegments%22+recipequerylanguage%3a%22en%22+catesegtype%3a%22recipe%22+cack%3a%22a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6%22+segtype%3a%2２UmVjaXBlLFJlY２lwZQ%3d%3d%２２+ctype%3a%２２0%２２+mltype%3a%２２0%２２+eltypedim1%3a%２２Recipe%２２&eeptype=EntityFull&FORM=RECICA" alt="Menu Item 1">
+                    <figcaption>Grilled Chicken - $12.99</figcaption>
+                </figure>
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken served with a side of vegetables.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://www.bing.com/search?q=Caesar+Salad+-+with+homemade+Caesar+Salad+Dressing&filters=ufn%3a%22Caesar+Salad+-+with+homemade+Caesar+Salad+Dressing%22+sid%3a%22b2431913b9858122559e72e83c1cebd8%22+segment%3a%22generic.carousel%22+secq%3a%22Caesar+Salad%22+supwlcar%3a%221%22+tsource%3a%22EntitySegments%22+recipequerylanguage%3a%22en%22+catesegtype%3a%22recipe%22+cack%3a%229b5f647e-2c04-41f9-b028-b0a60bf5f2b9%22+segtype%3a%22UmVjaXBlLFJlY2lwZQ%3d%3d%22+ctype%3a%220%22+mltype%3a%220%22+eltypedim1%3a%22Recipe%22&eeptype=EntityFull&FORM=RECICA" alt="Menu Item 2">
+                    <figcaption>Caesar Salad - $8.99</figcaption>
+                </figure>
+                <h3>Caesar Salad</h3>
+                <p>Fresh romaine lettuce with Caesar dressing and croutons.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://www.bing.com/search?q=Spaghetti+Bolognese&filters=ufn%3a%22Spaghetti+Bolognese%22+sid%3a%220b5a040e9f1377746b1fa637861587b5%22+segment%3a%22generic.carousel%22+secq%3a%22Spaghetti+Bolognese%22+supwlcar%3a%221%22+tsource%3a%22EntitySegments%22+recipequerylanguage%3a%22en%22+catesegtype%3a%22recipe%22+cack%3a%22e01edddc-1df1-481e-9efd-367f4d78799c%22+segtype%3a%22UmVjaXBlLFJlY2lwZQ%3d%3d%22+ctype%3a%220%22+mltype%3a%220%22+eltypedim1%3a%22Recipe%22&eeptype=EntityFull&FORM=RECICA" alt="Menu Item 3">
+                    <figcaption>Spaghetti Bolognese - $10.99</figcaption>
+                </figure>
+                <h3>Spaghetti Bolognese</h3>
+                <p>Classic Italian pasta with rich meat sauce.</p>
+            </article>
+        </section>
+        <section id="order-form">
+            <h2>Order Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="add-ons">Add-ons:</label>
+                <figure>
+                    <img src="" alt="">
+                <input type="checkbox" id="add-ons" name="add-ons"> Bacon
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                <input type="checkbox" id="add-ons" name="add-ons"> Extra Sauce
+                </figure>
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions" rows="4" cols="50" placeholder="Any special requests or dietary restrictions?"></textarea>
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 DODARI Restaurant. All rights reserved.</p>
+</footer>
+</html>
